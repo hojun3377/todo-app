@@ -6,8 +6,11 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "classnames": "^2.3.2",
+    "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.0"
   },
@@ -41,6 +44,7 @@
     "eslint": "latest",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-react": "latest"
+    "eslint-plugin-react": "latest",
+    "prop-types": "^15.8.1"
   }
 }

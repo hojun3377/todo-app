@@ -1,7 +1,9 @@
 import React from 'react';
 
+import TodoTemplate from './components/TodoTemplate';
+
 function App() {
-  return <div> init </div>;
+  return <TodoTemplate></TodoTemplate>;
 }
 
 export default App;
