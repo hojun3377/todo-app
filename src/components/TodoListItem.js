@@ -9,18 +9,16 @@ import {
 
 import './TodoListItem.scss';
 
-const TodoListItem = ({ todo, onRemove }) => {
+const TodoListItem = ({ todo, onRemove, onToggle }) => {
   const { id, text, checked } = todo;
-
-  const onClick = () => onRemove(id);
 
   return (
     <div className="TodoListItem">
-      <div className={cn('checkbox', { checked })}>
+      <div className={cn('checkbox', { checked })} onClick={() => onToggle(id)}>
         {checked ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
         <div className="text">{text}</div>
       </div>
-      <div className="remove" onClick={onClick}>
+      <div className="remove" onClick={() => onRemove(id)}>
         <MdRemoveCircleOutline />
       </div>
     </div>
@@ -30,6 +28,7 @@ const TodoListItem = ({ todo, onRemove }) => {
 TodoListItem.propTypes = {
   todo: PropTypes.object,
   onRemove: PropTypes.func,
+  onToggle: PropTypes.func,
 };
 
 export default TodoListItem;
