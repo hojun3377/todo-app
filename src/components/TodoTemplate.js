@@ -13,7 +13,7 @@ const TodoTemplate = ({ children }) => {
 };
 
 TodoTemplate.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.array,
 };
 
 export default TodoTemplate;
