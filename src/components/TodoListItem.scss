@@ -1,10 +1,20 @@
+.TodoListItem-virtualized {
+  & + & {
+    border-top: 1px solid #dee2e6;
+  }
+
+  &:nth-child(even) {
+    background: #b8b9ba;
+  }
+}
+
 .TodoListItem {
   padding: 1rem;
   display: flex;
   align-items: center;
-  &:nth-child(even) {
-    background: #b8b9ba;
-  }
+  // &:nth-child(even) {
+  //   background: #b8b9ba;
+  // }
 
   .checkbox {
     cursor: pointer;
@@ -42,8 +52,8 @@
     }
   }
 
-  & + & {
-    // 해당 스타일을 가진 요소가 중복으로 나타날 때 두번째 요소에 스타일 적용
-    border-top: 1px solid #dee2e6;
-  }
+  // & + & {
+  //   // 해당 스타일을 가진 요소가 중복으로 나타날 때 두번째 요소에 스타일 적용
+  //   border-top: 1px solid #dee2e6;
+  // }
 }
